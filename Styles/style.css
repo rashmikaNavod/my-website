@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: HumanSans;
+}
+
+@font-face{
+    font-family: HumanSans;
+    src: url(../Fonts/HumanSans-Bold.otf);
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 230px;
+}
+.nav-bar>a{
+    text-decoration: none;
+    margin-left: 60px;
+}
+header{
+    padding: 10px 5%;
+    justify-content: space-between;
+    font-size: 18px;
+}
