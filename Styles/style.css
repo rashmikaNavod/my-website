@@ -2,26 +2,58 @@
     margin: 0;
     padding: 0;
     font-family: HumanSans;
+    /* background: rgb(201, 201, 201); */
+    background-color: black;
 }
-
 @font-face{
     font-family: HumanSans;
     src: url(../Fonts/HumanSans-Bold.otf);
 }
-
+header{
+    padding: 10px 5%;
+    justify-content: space-between;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .flex-div{
     display: flex;
     align-items: center;
 }
 .logo{
     width: 230px;
+    display: block;
+    margin-right: 35px;
 }
-.nav-bar>a{
+.nav-center ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav-center ul li a{
     text-decoration: none;
-    margin-left: 60px;
+    color: whitesmoke;
+    display: block;
 }
-header{
-    padding: 10px 5%;
-    justify-content: space-between;
+.nav-center ul li{
+    margin-right: 35px;
+}
+.contact-me-btn{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    justify-content: center;
+    background: #BD4B4B;
+    border-radius: 20px;
+}
+.contact-me-btn button{
     font-size: 18px;
+    color: whitesmoke;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }
+
