@@ -66,6 +66,36 @@ header{
 }
 
 
+/* ---------------------MAIN-STYLE-------------------------- */
+main{
+    display: flex;
+    padding: 60px 5%;
+    /* height: 100vh; */
+}
+.left-section{
+    align-content: center;
+    font-family: SUSE;
+    color: #fff;
+}
+.left-section h1{
+    font-size: 43px;
+}
+.left-section h1 span{
+    color: #BD4B4B;
+}
+.left-section h2{
+    font-size: 32px;
+}
+.left-section p{
+    margin-top: 20px;
+}
+.right-section img{
+    width: 350px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+
 /* ---------------------FOOTER-STYLE-------------------------- */
 .footer-left{
     font-family: SUSE;
@@ -107,8 +137,13 @@ footer{
     align-items: center;
     justify-content: space-between;
     color: #fff;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 100;
+    /* position: absolute;
     bottom: 0;
     height: 100px;
-    width: 100vw;
+    width: 100vw; */
 }
+
