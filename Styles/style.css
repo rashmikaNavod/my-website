@@ -1,19 +1,33 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: HumanSans;
-    /* background: rgb(201, 201, 201); */
-    background-color: black;
+    /* background: rgb(216, 216, 216); */
+    /* background-color: black; */
 }
 @font-face{
-    font-family: HumanSans;
+    font-family: H-B;
     src: url(../Fonts/HumanSans-Bold.otf);
 }
+@font-face{
+    font-family: H-M;
+    src: url(../Fonts/HumanSans-Medium.otf);
+}
+@font-face{
+    font-family: H-R;
+    src: url(../Fonts/HumanSans-Regular.otf);
+}
+@font-face{
+    font-family: H-L;
+    src: url(../Fonts/HumanSans-Light.otf);
+}
+
 header{
     padding: 10px 5%;
     justify-content: space-between;
     font-size: 18px;
+    font-family: H-R;
     position: sticky;
+    background: black;
     top: 0;
     z-index: 100;
 }
@@ -49,7 +63,7 @@ header{
     border-radius: 20px;
 }
 .contact-me-btn button{
-    font-size: 18px;
+    font-size: 16px;
     color: whitesmoke;
     background: transparent;
     border: 0;
@@ -57,3 +71,34 @@ header{
     cursor: pointer;
 }
 
+/* --------- footer-style ---------- */
+
+
+
+.footer-left{
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-left img{
+    width: 25px;
+    margin-right: 15px;
+}
+
+.footer-right ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.footer-right ul li a img{
+    width: 35px;
+    display: block;
+}
+footer{
+    padding: 10px 5%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+}
