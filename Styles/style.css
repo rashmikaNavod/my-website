@@ -92,7 +92,7 @@ main{
 .right-section img{
     width: 350px;
     border-radius: 50%;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 
@@ -140,10 +140,28 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100vw;
-    z-index: 100;
+    z-index: 100; */
     /* position: absolute;
     bottom: 0;
     height: 100px;
-    width: 100vw; */
+    width: 100vw;
 }
 
+/* other */
+
+.sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec>div{
+    width: 200px;
+    color: #fff;
+}
+.card{
+    color: #fff;
+    width: 200px;
+    border: 2px solid #fff;
+    margin: 50px 0;
+    text-align: center;
+}
