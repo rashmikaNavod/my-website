@@ -4,7 +4,7 @@
     padding: 0;
     font-family: SUSE;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 a{
     text-decoration: none;
@@ -64,13 +64,26 @@ button{
     margin-left: 12px;
 }
 .btn-contact{
-    display: none;
+    display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px 45px;
-    border: 1.8px solid ;
-    background-image: linear-gradient(to bottom right, #8711c1, #2472fc) 1;
-    border-radius: 10000px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    border-radius: 1000px;
+    position: relative;
     margin-left: 16px;
+
+}
+.btn-contact::after{
+    content: '';
+    position: absolute;
+    height: 109%;
+    width: 103%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #8711c1,#2472fc);
+    z-index: -1;
 }
 .side-menu{
     display: flex;
@@ -100,13 +113,40 @@ button{
     top: 24px;
 }
 
+/* ----------------------- Home ------------------------ */
+.profile-img{
+    border-radius: 1000px;
+    width: 128px;
+}
+.home-section{
+    width: 91.666667%;
+    max-width: 768px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+}
+.home-section h1 span{
+    color: #2472fc;
+}
 
 
-/* 768 1024 1280 */
+
 
 
 
 /* -----------------------Media-query------------------------ */
+
+@media (max-width:1024px) {
+    .btn-contact{
+        display: none;
+    }
+}
 @media (min-width:768px) {
     .btn-menu{
         display: none;
@@ -124,7 +164,6 @@ button{
         display: none;
     }
 }
-
 @media (min-width:1024px) {
     .nav-list{
         gap: 32px;
@@ -136,7 +175,6 @@ button{
         padding: 16px 32px; 
     }
 }
-
 @media (min-width:1280px) {
     .header-bar{
         padding: 16px 8%;
