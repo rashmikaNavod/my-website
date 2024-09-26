@@ -91,7 +91,6 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
     gap: 16px;
     padding: 80px 40px;
     position: fixed;
@@ -112,6 +111,9 @@ button{
     position: absolute;
     right: 24px;
     top: 24px;
+}
+.side-menu li a{
+    font-size: 20px;
 }
 
 /* ----------------------- Home ------------------------ */
@@ -135,7 +137,8 @@ button{
 }
 .home-section h1 span{
     color: #2472fc;
-    font-size: 56px;
+    font-size: 30px;
+    line-height: 36px;
 }
 .home-section h1{
     font-weight:600;
@@ -180,7 +183,7 @@ button{
 
 
 @media (min-width: 640px) {
-    .home-section h1{
+    .home-section h1, .home-section h1 span{
         font-size: 50px;
         line-height: 1;
     }
@@ -221,7 +224,7 @@ button{
     .header-bar{
         padding: 16px 32px; 
     }
-    .home-section h1{
+    .home-section h1, .home-section h1 span{
         font-size: 56px;
     }
 }
