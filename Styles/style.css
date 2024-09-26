@@ -4,7 +4,6 @@
     padding: 0;
     font-family: SUSE;
     box-sizing: border-box;
-    font-size: 17px;
     /* overflow: hidden; */
 }
 a{
@@ -113,7 +112,7 @@ button{
     top: 24px;
 }
 .side-menu li a{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* ----------------------- Home ------------------------ */
