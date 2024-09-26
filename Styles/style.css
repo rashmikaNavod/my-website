@@ -4,6 +4,7 @@
     padding: 0;
     font-family: SUSE;
     box-sizing: border-box;
+    font-size: 17px;
     /* overflow: hidden; */
 }
 a{
@@ -90,7 +91,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     gap: 16px;
     padding: 80px 40px;
     position: fixed;
@@ -134,6 +135,7 @@ button{
 }
 .home-section h1 span{
     color: #2472fc;
+    font-size: 56px;
 }
 .home-section h1{
     font-weight:600;
