@@ -117,6 +117,7 @@ button{
 .profile-img{
     border-radius: 1000px;
     width: 128px;
+    margin-bottom: 15px;
 }
 .home-section{
     width: 91.666667%;
@@ -134,10 +135,37 @@ button{
 .home-section h1 span{
     color: #2472fc;
 }
+.home-section h1{
+    font-weight:600;
+    font-size: 30px;
+    line-height: 36px;
+}
+.home-section p{
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-section h3{
+    font-size: 20px;
+    line-height: 28px;
 
-
-
-
+}
+.btn-resume{
+    margin-top: 16px;
+}
+.btn-resume a img{
+    width: 16px;
+}
+.btn-resume a{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 40px;
+    border-width: 1px;
+    border-radius: 1000px;
+    background-image: linear-gradient(to right, #8711c1,#2472fc);
+    color: white;
+}
 
 
 /* -----------------------Media-query------------------------ */
@@ -147,6 +175,16 @@ button{
         display: none;
     }
 }
+
+
+@media (min-width: 640px) {
+    .home-section h1{
+        font-size: 50px;
+        line-height: 1;
+    }
+}
+
+
 @media (min-width:768px) {
     .btn-menu{
         display: none;
@@ -163,7 +201,14 @@ button{
     .side-menu{
         display: none;
     }
+    .home-section h3{
+        font-size: 24px;
+        line-height: 32px;
+        
+    }
 }
+
+
 @media (min-width:1024px) {
     .nav-list{
         gap: 32px;
@@ -174,7 +219,12 @@ button{
     .header-bar{
         padding: 16px 32px; 
     }
+    .home-section h1{
+        font-size: 56px;
+    }
 }
+
+
 @media (min-width:1280px) {
     .header-bar{
         padding: 16px 8%;
