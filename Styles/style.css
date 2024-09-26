@@ -75,6 +75,7 @@ button{
 .side-menu{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-size: 20px;
     gap: 16px;
@@ -86,7 +87,7 @@ button{
     bottom: 0;
     height: 100vh;
     z-index: 50;
-    background: rgb(255  , 241, 242);
+    background: rgb(255, 255, 255);
     transition: 500ms;
 }
 .side-menu div img{
