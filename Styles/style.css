@@ -24,6 +24,20 @@ body{
     overflow-x: hidden;
 }
 
+/* ----------------------- Background-img ------------------------ */
+.background-img img{
+    width: 100%;
+}
+.background-img{
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    transform: translateY(-20%);
+
+}
+
+
+
 /* ----------------------- Header ------------------------ */
 .logo{
     width: 150px;
