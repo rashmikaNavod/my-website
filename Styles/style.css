@@ -24,20 +24,6 @@ body{
     overflow-x: hidden;
 }
 
-/* ----------------------- Background-img ------------------------ */
-.background-img img{
-    width: 100%;
-}
-.background-img{
-    position: fixed;
-    top: 0;
-    z-index: -10;
-
-    animation-name: bg-animation;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
 
 @keyframes bg-animation {
     0%{

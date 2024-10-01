@@ -1,3 +1,9 @@
+var loader = document.getElementById("preloader");
+window.addEventListener("load" , function(){
+    loader.style.display = "none";
+})
+
+
 const sideMenu = document.querySelector('#sideMenu');
 const headerBar = document.querySelector('header')
 const headerLinks = document.querySelector('header ul')
