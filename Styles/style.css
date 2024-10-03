@@ -8,7 +8,7 @@
 }
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 img{
     display: block;
@@ -22,30 +22,7 @@ button{
 }
 body{
     overflow-x: hidden;
-}
-
-
-@keyframes bg-animation {
-    0%{
-        transform: rotate(0deg);
-
-    }
-    25%{
-        transform: rotate(90deg);
-    }
-    50%{
-        transform: rotate(180deg);
-
-    }
-    75%{
-        transform: rotate(270deg);
-
-    }
-    100%{
-        transform: rotate(360deg);
-
-    }
-
+    background: #0f1219;
 }
 
 
@@ -56,16 +33,30 @@ body{
     margin-right: 35px;
 }
 .nav-list{
+    position: relative;
     display: none;
-    gap: 24px;
-    align-items: center;
-    padding: 12px 48px;
-    border-radius: 100px;
+    background: transparent;
+    padding: 10px 0;
+
 }
-.nav-list2{
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-    background-color: rgba(255, 255, 255, 0.5);
+.nav-list li a{
+    position: relative;
+    padding: 15px 20px;
+    color: white;
+    letter-spacing: 0.01em;
 }
+#marker{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 85px;
+    border-bottom: 5px solid #08f9ff;
+    background: linear-gradient(0deg,#08f9ff33,transparent);
+    transition: 0.5s;
+    pointer-events: none;
+    filter: drop-shadow(0 5px 25px #08f9ff);
+}
+
 .header-bar{
     width: 100%;
     position: fixed;
@@ -98,14 +89,15 @@ body{
     align-items: center;
     justify-content: center;
     padding: 10px 45px;
-    background-color: #ffffff;
+    background-color: transparent;
     border: none;
-    color: #000000;
+    color: #ffffff;
     border-radius: 1000px;
     position: relative;
     margin-left: 16px;
+    border: 2px solid white;
 }
-.btn-contact::after{
+/* .btn-contact::after{
     content: '';
     position: absolute;
     height: 109%;
@@ -113,7 +105,7 @@ body{
     border-radius: 1000px;
     background-image: linear-gradient(to bottom right, #8711c1,#2472fc);
     z-index: -1;
-}
+} */
 .side-menu{
     display: flex;
     flex-direction: column;
@@ -128,7 +120,7 @@ body{
     bottom: 0;
     height: 100vh;
     z-index: 50;
-    background: rgb(255, 255, 255);
+    background: #0f1219;
     transition: 500ms;
 }
 .side-menu div img{
@@ -162,12 +154,9 @@ body{
     align-items: center;
     gap: 16px;
     justify-content: center;
+    color: rgb(236, 236, 236);
 }
-.home-section h3 span{
-    color: #2472fc;
-    font-size: 20px;
-    line-height: 28px;
-}
+
 .home-section h1{
     font-weight:400;
     font-size: 30px;
@@ -209,14 +198,16 @@ body{
     text-align: center;
     margin-bottom: 8px;
     font-size: 18px;
+    font-weight:400;
     line-height: 28px;
 }
 .about-section h2{
     text-align: center;
     font-size: 48px;
+    font-weight: 400;
     line-height: 1;
 }
-.about-section div{
+.about-content{
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -224,10 +215,19 @@ body{
     gap: 80px;
     margin: 80px 0;
 }
+.about-content div:first-child{
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
 .about-content div:first-child img{
     width: 256px;
     border-radius: 24px;
     max-width: none;
+}
+.about-content div:last-child{
+    flex: 1 1 0%;
 }
 
 
@@ -248,7 +248,7 @@ body{
     .about-content div:first-child img{
         width: 320px;
     }
-    
+   
 }
 
 
@@ -270,15 +270,17 @@ body{
     }
     .home-section h3, .home-section h3 span{
         font-size: 24px;
-        line-height: 32px;
-        
+        line-height: 32px;   
+    }
+    .logo{
+        margin-left: 20px;
     }
 }
 
 
 @media (min-width:1024px) {
     .nav-list{
-        gap: 32px;
+        gap: 12px;
     }
     .btn-contact{
         display: flex;
@@ -291,6 +293,9 @@ body{
     }
     .about-section div{
         flex-direction: row;  
+    }
+    .logo{
+        margin-left: 0;
     }
 }
 

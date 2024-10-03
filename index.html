@@ -32,29 +32,30 @@
     <!---------- HEADER-SECTION ------------>
     <header class="header-bar">
     
-    <a href="index.html"><img src="Assets/rashmika-01.svg" alt="rashmika-logo" class="logo"></a>
+    <a href="#"><img src="Assets/rashmika-02.svg" alt="rashmika-logo" class="logo"></a>
     
-    <ul class="nav-list nav-list2">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-    </ul>
-    
+    <div class="nav-center"></div>
+
     <div class="nav-right">
-        <button class="btn-mode"><img src="Assets/moon_icon.png" alt=""></button>
 
-        <a href="#contact" class="btn-contact">
-            Contact
-        </a>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <div id="marker"></div>
+        </ul>
 
-        <button class="btn-menu"><img src="Assets/menu-black.png" alt="" onclick="openMenu()"></button>
+        <a href="#contact" class="btn-contact">Contact</a>
+
+        <button class="btn-menu"><img src="Assets/menu-white.png" alt="" onclick="openMenu()"></button>
+
     </div>
 
     <!-- mobile-menu -->
     <ul id="sideMenu" class="side-menu">
         <div>
-            <img src="Assets/close-black.png" alt="" onclick="closeMenu()">
+            <img src="Assets/close-white.png" alt="" onclick="closeMenu()">
         </div>
 
         <li><a href="#top">Home</a></li>
@@ -67,11 +68,11 @@
     </header>
 
     <!---------- HOME-SECTION ------------>
-    <section class="home-section">
+    <section id="home"  class="home-section">
         <img src="Assets/profile-img.JPG" alt="" class="profile-img">
 
         <h3>
-            Hi, I am <span>Rashmika</span>
+            Hi, I am Rashmika
         </h3>
         <h1>A creative Software engineer & Graphic designer</h3>
         <p>I'm Rashmika Navod, a versatile full-stack developer. My code is where creativity meets precision. Explore my skills, projects, and journey in About Me. If we align, let's craft digital masterpieces together at Hire Me.</p>
@@ -96,6 +97,8 @@
 
     </section>
 
+
     <script src="Scripts/script.js"></script>
+    <Script src="Scripts/navBar.js"></Script>
 </body>
 </html>
