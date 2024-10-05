@@ -24,7 +24,12 @@ body{
     overflow-x: hidden;
     background: #0f1219;
 }
-
+.html-tag{
+    scroll-behavior: smooth;
+}
+.scroll-margin{
+    scroll-margin-top: 80px;
+}
 
 /* ----------------------- Header ------------------------ */
 .logo{
@@ -200,12 +205,14 @@ body{
     font-size: 18px;
     font-weight:400;
     line-height: 28px;
+    color: white;
 }
 .about-section h2{
     text-align: center;
     font-size: 48px;
     font-weight: 400;
     line-height: 1;
+    color: white;
 }
 .about-content{
     display: flex;
@@ -228,6 +235,25 @@ body{
 }
 .about-content div:last-child{
     flex: 1 1 0%;
+}
+
+
+/* ----------------------- Skills ------------------------ */
+.skill-section{
+    width: 100%;
+    padding: 40px 12%;
+}
+.first-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.first-sec h4{
+    font-size: 18px;
+    font-weight:400;
+    line-height: 28px;
+    color: white; 
 }
 
 
