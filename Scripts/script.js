@@ -5,7 +5,6 @@ window.addEventListener("load" , function(){
 })
 
 
-
 //header change nav-list javascript
 window.addEventListener('resize' , handleResize );
 
@@ -28,8 +27,6 @@ function handleResize() {
 document.addEventListener('DOMContentLoaded',handleResize);
 
 
-
-
 const sideMenu = document.querySelector('#sideMenu');
 const headerBar = document.querySelector('header')
 const headerLinks = document.querySelector('header ul')
@@ -50,3 +47,24 @@ window.addEventListener('scroll', ()=>{
         headerLinks.classList.add('nav-list2');
     }
 })
+
+
+//skills-section
+
+// const checkBox  = document.querySelector('#default');
+// const mainSec = document.querySelector('.main-sec')
+// const tSkill = document.querySelector('.technology-skills')
+// const pSkill = document.querySelector('.personal-skills')
+
+// checkBox.addEventListener('',)
+document.getElementById('default').addEventListener('change', function () {
+    const techSkills = document.querySelector('.technology-skills');
+    const personalSkills = document.querySelector('.personal-skills');
+    if (this.checked) {
+        techSkills.style.display = 'none';
+        personalSkills.style.display = 'block';
+    } else {
+        techSkills.style.display = 'block';
+        personalSkills.style.display = 'none';
+    }
+});
