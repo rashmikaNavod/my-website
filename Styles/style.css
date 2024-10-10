@@ -293,7 +293,7 @@ input:checked + .check-btn::before{
 }
 .skill-grid{
     display: grid;
-    grid-template-columns: 140px 140px 140px 140px 140px 140px;
+    grid-template-columns: 140px 140px ;
     justify-content: center;
     align-content: center;
     gap: 25px;
