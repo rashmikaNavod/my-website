@@ -325,6 +325,107 @@ input:checked + .check-btn::before{
 }
 
 
+/* ----------------------- Contatct ------------------------ */
+.contact-section{
+    width: 100%;
+    padding: 40px 12%;
+}
+.contact-section h4{
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight:400;
+    color: white;
+}
+.contact-section h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+}
+.contact-section p{
+    text-align: center;
+    max-width: 672px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 48px;
+    color: white;
+    font-weight: 300;
+}
+.contact-form{
+    max-width: 672px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-name{
+    flex: 1 1 0%;
+    padding: 10px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-width: 2.5px;
+    border-color: #9ca3af;
+    border-radius: 6px;
+    background-color: #0f1219;
+    color: white;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-email{
+    flex: 1 1 0%;
+    padding: 10px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-width: 2.5px;
+    border-color: #9ca3af;
+    border-radius: 6px;
+    background-color: #0f1219;
+    color: white;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-form div{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+.form-message{
+    width: 100%;
+    padding: 16px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-width: 2.5px;
+    border-color: #9ca3af;
+    border-radius: 6px;
+    background-color: #0f1219;
+    color: white;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 24px;
+}
+.contact-submit-btn img{
+    width: 18px;
+}
+.contact-submit-btn{
+    padding: 12px 32px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    color: white;
+    border-radius: 9999px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2.5px solid #9ca3af;
+    font-size: 17px;
+    cursor: pointer;
+}
+
 
 /* -----------------------Media-query------------------------ */
 
@@ -389,6 +490,10 @@ input:checked + .check-btn::before{
     }
     .btn-contact-home{
         display: flex;
+    }
+    .contact-form div{
+        grid-template-columns: 1fr 1fr;
+
     }
     
 }
