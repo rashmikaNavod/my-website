@@ -102,6 +102,7 @@ body{
     margin-left: 16px;
     border: 2px solid white;
 }
+
 /* .btn-contact::after{
     content: '';
     position: absolute;
@@ -242,6 +243,7 @@ body{
 .skill-section{
     width: 100%;
     padding: 40px 12%;
+    height: 100vh;
 }
 .first-sec{
     display: flex;
@@ -290,6 +292,7 @@ input:checked + .check-btn::before{
 .skill-grid img{
     width: 100px;
     aspect-ratio: 1/1;
+    transition: 500ms;
 }
 .skill-grid{
     display: grid;
@@ -299,7 +302,6 @@ input:checked + .check-btn::before{
     gap: 20px;
     margin: 30px 0;
 }
-
 
 
 
@@ -388,13 +390,17 @@ input:checked + .check-btn::before{
         margin-left: 0;
     }
     .skill-grid{
-        grid-template-columns: 140px 140px 140px 140px;
-        gap: 25px;
+        grid-template-columns: 120px 120px 120px 120px 120px 120px;
+        gap: 20px;
         
     }
     .skill-grid img{
-        width: 140px;
+        width: 120px;
         aspect-ratio: 1/1; 
+    }
+    .skill-grid img:hover{
+        cursor: pointer;
+        transform: scale(1.2);
     }
 }
 
