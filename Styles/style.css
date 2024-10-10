@@ -91,9 +91,10 @@ body{
 }
 .btn-contact{
     display: flex;
+    gap: 12px;
     align-items: center;
     justify-content: center;
-    padding: 10px 45px;
+    padding: 10px 40px;
     background-color: transparent;
     border: none;
     color: #ffffff;
@@ -101,6 +102,9 @@ body{
     position: relative;
     margin-left: 16px;
     border: 2px solid white;
+}
+.btn-contact img{
+    width: 12px;
 }
 
 /* .btn-contact::after{
@@ -177,13 +181,15 @@ body{
     font-size: 20px;
     line-height: 28px;
 }
-.btn-resume{
+.btn-home{
     margin-top: 16px;
+    display: flex;
+    gap: 20px;
 }
-.btn-resume a img{
-    width: 16px;
+.btn-resume-home img{
+    width: 15px;
 }
-.btn-resume a{
+.btn-resume-home{
     display: flex;
     gap: 8px;
     align-items: center;
@@ -193,7 +199,22 @@ body{
     background-image: linear-gradient(to right, #8711c1,#2472fc);
     color: white;
 }
-
+.btn-contact-home img{
+    width: 12px;
+}
+.btn-contact-home{
+    display: none;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    border-radius: 1000px;
+    position: relative;
+    border: 2px solid white;
+}
 
 /* ----------------------- About ------------------------ */
 .about-section{
@@ -366,6 +387,9 @@ input:checked + .check-btn::before{
         width: 140px;
         aspect-ratio: 1/1; 
     }
+    .btn-contact-home{
+        display: flex;
+    }
     
 }
 
@@ -401,6 +425,9 @@ input:checked + .check-btn::before{
     .skill-grid img:hover{
         cursor: pointer;
         transform: scale(1.2);
+    }
+    .btn-contact-home{
+        display: none;
     }
 }
 
