@@ -264,7 +264,7 @@ body{
 .skill-section{
     width: 100%;
     padding: 40px 12%;
-    height: 100vh;
+    
 }
 .first-sec{
     display: flex;
@@ -329,6 +329,7 @@ input:checked + .check-btn::before{
 .contact-section{
     width: 100%;
     padding: 40px 12%;
+    height: 100vh;
 }
 .contact-section h4{
     text-align: center;
