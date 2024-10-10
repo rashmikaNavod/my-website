@@ -288,15 +288,15 @@ input:checked + .check-btn::before{
     display: none;
 }
 .skill-grid img{
-    width: 140px;
+    width: 100px;
     aspect-ratio: 1/1;
 }
 .skill-grid{
     display: grid;
-    grid-template-columns: 140px 140px ;
+    grid-template-columns: 100px 100px ;
     justify-content: center;
     align-content: center;
-    gap: 25px;
+    gap: 20px;
     margin: 30px 0;
 }
 
@@ -319,6 +319,14 @@ input:checked + .check-btn::before{
     }
     .about-content div:first-child img{
         width: 320px;
+    }
+    .skill-grid{
+        grid-template-columns: 120px 120px 120px ;
+        gap: 20px;
+    }
+    .skill-grid img{
+        width: 120px;
+        aspect-ratio: 1/1; 
     }
    
 }
@@ -347,6 +355,16 @@ input:checked + .check-btn::before{
     .logo{
         margin-left: 20px;
     }
+    .skill-grid{
+        grid-template-columns: 140px 140px 140px;
+        gap: 25px;
+        margin-top: 40px;
+    }
+    .skill-grid img{
+        width: 140px;
+        aspect-ratio: 1/1; 
+    }
+    
 }
 
 
@@ -369,12 +387,30 @@ input:checked + .check-btn::before{
     .logo{
         margin-left: 0;
     }
+    .skill-grid{
+        grid-template-columns: 140px 140px 140px 140px;
+        gap: 25px;
+        
+    }
+    .skill-grid img{
+        width: 140px;
+        aspect-ratio: 1/1; 
+    }
 }
 
 
 @media (min-width:1280px) {
     .header-bar{
         padding: 16px 8%;
+    }
+    .skill-grid{
+        grid-template-columns: 140px 140px 140px 140px 140px 140px;
+        gap: 25px;
+        
+    }
+    .skill-grid img{
+        width: 140px;
+        aspect-ratio: 1/1; 
     }
 }
 
