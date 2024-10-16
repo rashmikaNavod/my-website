@@ -431,27 +431,52 @@ input:checked + .check-btn::before{
 /* ----------------------- Footer ------------------------ */
 
 .footer-section{
-    margin-top: 70px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     color: white;
-}
-.footer-section div{
+    font-weight: 300;
     text-align: center;
 }
-.footer-section div img{
+.footer-section>p{
+    font-size: 14px;
+}
+.footer-section>div:first-child>img{
     width: 70px;
     margin: 0 auto;
-    margin-bottom: 8px;
 }
-.mail-icn{
-    width: max-content;
+
+.mail{
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin: 0 auto;
+    gap: 12px;
+    justify-content: center;
 }
-.mail-icn img{
-    width: 100px;
+.mail>img{
+    width: 32px;
 }
+.footer-section>div:nth-child(2){
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 2px solid #9ca3af;
+    margin: 0 10%;
+    margin-top: 48px;
+    padding: 40px 0;
+}
+.footer-section>div:nth-child(2)>ul{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 16px;
+}
+.footer-section>div:nth-child(2)>ul>li>a>img{
+    width: 32px;
+}
+.location{
+    margin-top: 16px;
+}
+
 
 /* -----------------------Media-query------------------------ */
 
@@ -460,7 +485,6 @@ input:checked + .check-btn::before{
         display: none;
     }
 }
-
 
 @media (min-width: 640px) {
     .home-section h1{
@@ -478,9 +502,7 @@ input:checked + .check-btn::before{
         width: 120px;
         aspect-ratio: 1/1; 
     }
-   
 }
-
 
 @media (min-width:768px) {
     .btn-menu{
@@ -521,9 +543,17 @@ input:checked + .check-btn::before{
         grid-template-columns: 1fr 1fr;
 
     }
+    .footer-section>div:nth-child(2){
+        display: flex;
+    }
+    .footer-section>div:nth-child(2)>ul{
+        margin-top: 0;
+    }
+    .location{
+        margin-top: 0;
+    }
     
 }
-
 
 @media (min-width:1024px) {
     .nav-list{
@@ -561,7 +591,6 @@ input:checked + .check-btn::before{
         display: none;
     }
 }
-
 
 @media (min-width:1280px) {
     .header-bar{
