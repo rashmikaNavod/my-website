@@ -41,10 +41,10 @@ function closeMenu(){
 window.addEventListener('scroll', ()=>{
     if(scrollY > 50){
         headerBar.classList.add('bg-white');
-        headerLinks.classList.remove('nav-list2');
+        // headerLinks.classList.remove('nav-list2');
     }else{
         headerBar.classList.remove('bg-white');
-        headerLinks.classList.add('nav-list2');
+        // headerLinks.classList.add('nav-list2');
     }
 })
 
