@@ -219,7 +219,7 @@ body{
 /* ----------------------- About ------------------------ */
 .about-section{
     width: 100%;
-    padding: 40px 12%;
+    padding: 30px 12%;
 }
 .about-section h4{
     text-align: center;
@@ -263,7 +263,7 @@ body{
 /* ----------------------- Skills ------------------------ */
 .skill-section{
     width: 100%;
-    padding: 40px 12%;
+    padding: 30px 12%;
     
 }
 .first-sec{
@@ -324,11 +324,50 @@ input:checked + .check-btn::before{
     margin: 30px 0;
 }
 
+/* ----------------------- Assignment ------------------------ */
+.assignment-section{
+    width: 100%;
+    padding: 30px 12%;
+}
+.assignment-section h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+    color: white;
+    margin-bottom: 48px;
+}
+.assignment-card-container{ 
+    display: grid;
+    justify-content: center;
+    gap: 40px 40px;
+    grid-template-columns: 300px;
+    padding: 30px 30px;
+}
+
+.assignment{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 340px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(f, f, f, 0.5);
+    transition: 0.5s;
+}
+
+.assignment:hover{
+    transform: scaley(1.2);
+}
+
+
 
 /* ----------------------- Contatct ------------------------ */
 .contact-section{
     width: 100%;
-    padding: 40px 12%;
+    padding: 30px 12%;
 
 }
 .contact-section h4{
@@ -429,7 +468,6 @@ input:checked + .check-btn::before{
 
 
 /* ----------------------- Footer ------------------------ */
-
 .footer-section{
     margin-top: 60px;
     margin-bottom: 20px;
@@ -476,6 +514,7 @@ input:checked + .check-btn::before{
 .location{
     margin-top: 16px;
 }
+
 
 
 /* -----------------------Media-query------------------------ */
@@ -552,7 +591,9 @@ input:checked + .check-btn::before{
     .location{
         margin-top: 0;
     }
-    
+    .assignment-card-container{ 
+        grid-template-columns: 300px 300px;
+    }
 }
 
 @media (min-width:1024px) {
@@ -589,6 +630,9 @@ input:checked + .check-btn::before{
     }
     .btn-contact-home{
         display: none;
+    }
+    .assignment-card-container{ 
+        grid-template-columns: 300px 300px 300px;
     }
 }
 
