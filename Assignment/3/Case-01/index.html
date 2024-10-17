@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-01</title>
+    <style>
+
+      *{
+        margin: 0;
+      }
+      body{
+          overflow-x:hidden;
+          overflow-y: hidden;
+      }
+      .main-rec{
+          width: 50vw;
+          height: 50vh;
+          position: absolute;
+      }
+
+      body>section:first-child{
+          background: red;
+      }
+      body>section:nth-child(2){
+          background: green;
+          right: 0;
+      }
+      body>section:nth-child(3){
+          background: deeppink;
+          right: 0;
+          bottom: 0;
+      }
+      body>section:nth-child(4){
+          background: orange;
+          left: 0;
+          bottom: 0;
+      }
+
+      #center-div{
+          width: 12vw;
+          height: 12vw;
+          background: white;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+      }
+      #center-div>div{
+          width: 8vw;
+          height: 8vw;
+          border-radius: 50%;
+          background: red;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+
+      }
+
+      .rec-center{
+          width: 12vw;
+          height: 12vw;
+          background: white;
+          border-radius: 50%;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+      }
+      .rec-center>div{
+          width: 5vw;
+          height: 5vw;
+          background: red;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+      }
+
+      .other-div>div{
+          width: 16vw;
+          aspect-ratio: 1/1;
+          background: white;
+          border-radius: 50%;
+          position: absolute;
+      }
+      .other-div>div:first-child{
+          left: -7vw;
+          top: -7vw;
+      }
+      .other-div>div:nth-child(2){
+          right: 0;
+          left: 0;
+          top: -7vw;
+          margin: auto;
+      }
+      .other-div>div:nth-child(3){
+          right: -7vw;
+          top: -7vw;
+      }
+      .other-div>div:nth-child(4){
+          bottom: -7vw;
+          right: -7vw;
+      }
+      .other-div>div:nth-child(5){
+          bottom: -7vw;
+          right: 0;
+          left: 0;
+          margin: auto;
+      }
+      .other-div>div:nth-child(6){
+          bottom: -7vw;
+          left: -7vw;
+      }
+
+
+    </style>
+</head>
+
+<body>
+    <section class="main-rec">
+        <div class="rec-center">
+            <div></div>
+        </div>
+    </section>
+    <section class="main-rec">
+        <div class="rec-center">
+            <div></div>
+        </div>
+    </section>
+    <section class="main-rec">
+        <div class="rec-center">
+            <div></div>
+        </div>
+    </section>
+    <section class="main-rec">
+        <div class="rec-center">
+            <div></div>
+        </div>
+    </section>
+
+    <div id="center-div">
+        <div></div>
+    </div>
+
+    <section class="other-div">
+        <div></div>
+        <div ></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+
+</body>
+</html>

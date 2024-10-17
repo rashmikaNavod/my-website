@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        display: flex;
+        width: fit-content;
+        animation: animation-slide 3s alternate-reverse infinite;
+    }
+    section>div{
+        width: 50vw;
+        height: 50vh;
+        
+    }
+    section>div:first-child{
+        background-image: url(../assets/images/slide1.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    section>div:nth-child(2){
+        background-image: url(../assets/images/slide2.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    section>div:nth-child(3){
+        background-image: url(../assets/images/slide3.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    section>div:nth-child(4){
+        background-image: url(../assets/images/slide4.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        width: 50vw;
+        height: 50vh;
+        border: 10px solid red;
+        overflow: hidden;
+    }
+
+    @keyframes animation-slide {
+        0%,20%{
+            transform: translateX(0%);
+        }
+        25%,45%{
+            transform: translateX(-25%);
+        }
+        50%,70%{
+            transform: translateX(-50%);
+        }
+        75%,100%{
+            transform: translateX(-75%);
+        }
+        /* 100%{
+
+        } */
+    }
+
+</style>
+<body>
+    <main>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+
+</body>
+</html>

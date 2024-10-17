@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +31,10 @@ body{
 .scroll-margin{
     scroll-margin-top: 80px;
 }
+
+/* color:#ff3e7f;
+color: #03a9f4;
+color: #009688; */
 
 /* ----------------------- Header ------------------------ */
 .logo{
@@ -263,8 +268,7 @@ body{
 /* ----------------------- Skills ------------------------ */
 .skill-section{
     width: 100%;
-    padding: 30px 12%;
-    
+    padding: 30px 12%;  
 }
 .first-sec{
     display: flex;
@@ -329,6 +333,14 @@ input:checked + .check-btn::before{
     width: 100%;
     padding: 30px 12%;
 }
+.assignment-section h4{
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight:400;
+    color: white;
+}
 .assignment-section h2{
     text-align: center;
     font-size: 48px;
@@ -342,24 +354,73 @@ input:checked + .check-btn::before{
     justify-content: center;
     gap: 40px 40px;
     grid-template-columns: 300px;
-    padding: 30px 30px;
+    padding: 30px;
 }
-
 .assignment{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 340px;
-    height: 300px;
+    height: 250px;
     background: rgb(255, 255, 255);
     border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(f, f, f, 0.5);
     transition: 0.5s;
 }
-
 .assignment:hover{
     transform: scaley(1.2);
+}
+.assignment>div:first-child{
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.assignment:hover .imgBx-a{
+    top: -50px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.imgBx-a>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content-a h2{
+    font-family:'Poppins';
+    color:#2472fc;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.content-a a{
+    font-family:'Poppins';
+    background: #009688;
+    font-size: 15px;
+    padding: 4px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+.content-a{
+    position: absolute;
+    top: 222px;
+    width: 100%;
+    padding: 0 30px;
+    height: 25px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.assignment:hover .content-a{
+    transform: scaleY(0.9);
+    top: 140px;
+    height: 80px;
 }
 
 
