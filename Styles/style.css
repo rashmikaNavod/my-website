@@ -335,19 +335,21 @@ input:checked + .check-btn::before{
 }
 .assignment-section h4{
     text-align: center;
-    margin-bottom: 8px;
+    font-family: 'Jost';
+    margin-bottom: 5px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 20px;
     font-weight:400;
     color: white;
 }
 .assignment-section h2{
     text-align: center;
+    font-family: 'Jost';
     font-size: 48px;
     font-weight: 400;
     line-height: 1;
     color: white;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 .assignment-card-container{ 
     display: grid;
@@ -383,7 +385,6 @@ input:checked + .check-btn::before{
     top: -45px;
     scale: 0.75;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-
 }
 .imgBx-a>img{
     position: absolute;
@@ -400,10 +401,6 @@ input:checked + .check-btn::before{
     font-size: 20px;
     font-weight: 700;
 }
-/* color:#ff3e7f;
-color: #03a9f4;
-color: #009688; */
-
 .content-a a{
     font-family:'Jost';
     background: #ff3e7f;
@@ -414,7 +411,6 @@ color: #009688; */
 }
 .content-a>a:nth-child(2){
     background: #009688;;
-
 }
 .content-a{
     position: absolute;
@@ -438,18 +434,19 @@ color: #009688; */
 .contact-section{
     width: 100%;
     padding: 30px 12%;
-
 }
 .contact-section h4{
     text-align: center;
-    margin-bottom: 8px;
+    font-family: 'Jost';
+    margin-bottom: 5px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 20px;
     font-weight:400;
     color: white;
 }
 .contact-section h2{
     text-align: center;
+    font-family: 'Jost';
     font-size: 48px;
     font-weight: 400;
     line-height: 1;
