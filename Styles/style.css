@@ -367,7 +367,7 @@ input:checked + .check-btn::before{
     transition: 0.5s;
 }
 .assignment:hover{
-    transform: scaley(1.2);
+    transform: scaley(1.1);
 }
 .assignment>div:first-child{
     position: absolute;
@@ -380,9 +380,10 @@ input:checked + .check-btn::before{
     overflow: hidden;
 }
 .assignment:hover .imgBx-a{
-    top: -50px;
+    top: -45px;
     scale: 0.75;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+
 }
 .imgBx-a>img{
     position: absolute;
@@ -538,12 +539,17 @@ input:checked + .check-btn::before{
 }
 .footer-section>p{
     font-size: 14px;
+    text-align: center;
+    margin: 0 10%;
+}
+.footer-section>div:first-child{
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
 }
 .footer-section>div:first-child>img{
     width: 70px;
-    margin: 0 auto;
 }
-
 .mail{
     display: flex;
     align-items: center;
@@ -559,8 +565,8 @@ input:checked + .check-btn::before{
     justify-content: space-between;
     border-top: 2px solid #9ca3af;
     margin: 0 10%;
-    margin-top: 48px;
-    padding: 40px 0;
+    margin-top: 40px;
+    padding: 32px 0 24px 0;
 }
 .footer-section>div:nth-child(2)>ul{
     display: flex;
@@ -653,7 +659,13 @@ input:checked + .check-btn::before{
         margin-top: 0;
     }
     .assignment-card-container{ 
-        grid-template-columns: 300px 300px;
+        grid-template-columns: 290px 290px;
+    }
+    .footer-section>p{
+        text-align: end;
+    }
+    .footer-section>div:first-child{
+        justify-content: center;
     }
 }
 
@@ -693,7 +705,7 @@ input:checked + .check-btn::before{
         display: none;
     }
     .assignment-card-container{ 
-        grid-template-columns: 300px 300px 300px;
+        grid-template-columns: 290px 290px 290px;
     }
 }
 
