@@ -353,7 +353,7 @@ input:checked + .check-btn::before{
     display: grid;
     justify-content: center;
     gap: 40px 40px;
-    grid-template-columns: 300px;
+    grid-template-columns: 270px;
     padding: 30px;
 }
 .assignment{
