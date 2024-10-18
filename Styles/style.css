@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -171,7 +172,6 @@ color: #009688; */
     justify-content: center;
     color: rgb(236, 236, 236);
 }
-
 .home-section h1{
     font-weight:400;
     font-size: 30px;
@@ -228,14 +228,16 @@ color: #009688; */
 }
 .about-section h4{
     text-align: center;
-    margin-bottom: 8px;
+    font-family: 'Jost';
+    margin: 5px 0;
     font-size: 18px;
+    line-height: 20px;
     font-weight:400;
-    line-height: 28px;
     color: white;
 }
 .about-section h2{
     text-align: center;
+    font-family: 'Jost';
     font-size: 48px;
     font-weight: 400;
     line-height: 1;
@@ -246,24 +248,41 @@ color: #009688; */
     width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
-    margin: 80px 0;
+    gap: 60px;
+    margin: 60px 0;
 }
-.about-content div:first-child{
+.about-content>div:first-child{
     max-width: max-content;
     margin-left: auto;
     margin-right: auto;
     position: relative;
 }
-.about-content div:first-child img{
+.about-content>div:first-child img{
     width: 256px;
     border-radius: 24px;
     max-width: none;
 }
-.about-content div:last-child{
+.about-content>div:nth-child(2){
     flex: 1 1 0%;
 }
-
+.about-content>div:nth-child(2)>p{
+    max-width: 672px;
+    color: #ffffff;
+    font-family: 'Jost';
+    margin-bottom: 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+}
+.about-content>div:nth-child(2)>div{
+    max-width: 672px;
+    color: #ffffff;
+    font-family: 'Jost';
+    margin-bottom: 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+}
 
 /* ----------------------- Skills ------------------------ */
 .skill-section{
@@ -277,10 +296,13 @@ color: #009688; */
     gap: 30px;
 }
 .first-sec h4{
+    text-align: center;
+    font-family: 'Jost';
+    margin-bottom: 5px;
     font-size: 18px;
+    line-height: 20px;
     font-weight:400;
-    line-height: 28px;
-    color: white; 
+    color: white;
 }
 .switch{
     display: flex;
@@ -711,6 +733,9 @@ input:checked + .check-btn::before{
     }
     .assignment-card-container{ 
         grid-template-columns: 290px 290px 290px;
+    }
+    .about-content{
+        align-items: flex-start;
     }
 }
 
