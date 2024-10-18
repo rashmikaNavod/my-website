@@ -276,20 +276,52 @@ color: #009688; */
 }
 .education{
     max-width: 672px;
-    color: #ffffff;
-    
+    color: #ffffff;   
 }
-.education h3{
-    font-size: 24px;
+.edu-title{
+    font-size: 20px;
     padding: 0 0 10px 30px;
     font-family: 'Jost';
+    font-weight: 500;
 }
-.education>h4{
+.education h3{
+    font-size: 20px;
+    font-family: 'Jost';
+    font-weight: 500;
+}
+.education p{
+    font-family: 'Jost';
+}
+.education h4{
+    text-align: left;
     margin: 0;
 }
 .education .contents{
     padding: 0px 30px;
     border-left: 2px solid #bababa;
+}
+.box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.box:hover{
+    box-shadow: 0px 3px 12px 0px #fff;
+    border: 1px solid transparent;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #fff;
+    border: 2px solid white
 }
 
 /* ----------------------- Skills ------------------------ */
