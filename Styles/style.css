@@ -269,19 +269,27 @@ color: #009688; */
     max-width: 672px;
     color: #ffffff;
     font-family: 'Jost';
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     border: 1px solid white;
     border-radius: 8px;
     padding: 10px;
 }
-.about-content>div:nth-child(2)>div{
+.education{
     max-width: 672px;
     color: #ffffff;
+    
+}
+.education h3{
+    font-size: 24px;
+    padding: 0 0 10px 30px;
     font-family: 'Jost';
-    margin-bottom: 40px;
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 10px;
+}
+.education>h4{
+    margin: 0;
+}
+.education .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
 }
 
 /* ----------------------- Skills ------------------------ */
