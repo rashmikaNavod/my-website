@@ -269,10 +269,11 @@ color: #009688; */
     max-width: 672px;
     color: #ffffff;
     font-family: 'Jost';
+    border: 1.5px solid white;
     margin-bottom: 30px;
-    border: 1px solid white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
+
 }
 .education{
     max-width: 672px;
@@ -297,7 +298,7 @@ color: #009688; */
     margin: 0;
 }
 .education .contents{
-    padding: 0px 30px;
+    padding: 0px 25px;
     border-left: 2px solid #bababa;
 }
 .box{
@@ -318,7 +319,7 @@ color: #009688; */
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    right: calc(100% + 22px);
+    right: calc(100% + 17px);
     top: 0;
     background-color: #fff;
     border: 2px solid white
