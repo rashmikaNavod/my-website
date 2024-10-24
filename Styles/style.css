@@ -708,7 +708,7 @@ input:checked + .check-btn::before{
 @media (min-width: 640px) {
     .home-section h1{
         font-size: 50px;
-        line-height: 1;
+        line-height: 58px;
     }
     .about-content div:first-child img{
         width: 320px;
@@ -794,6 +794,7 @@ input:checked + .check-btn::before{
     }
     .home-section h1, .home-section h1 span{
         font-size: 56px;
+        line-height: 65px;
     }
     .about-section div{
         flex-direction: row;  
