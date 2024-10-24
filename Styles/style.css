@@ -176,6 +176,51 @@ color: #009688; */
     font-weight:400;
     font-size: 30px;
     line-height: 36px;
+    font-family: 'Jost';
+}
+.home-section h1 span{
+    font-family: 'Jost'; 
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+    animation: displayText 9s infinite;
+    animation-delay: calc(-3s * var(--i));
+}
+@keyframes displayText
+{
+    0%
+    {
+        display: inline-block;
+    }
+    33.33%,100%{
+        display: none;
+    }
+}
+.home-section h1 span::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #08f9ff;
+    overflow: hidden;
+    width: 100%;
+    /* height: 100%; */
+    border-right: 2px solid #08f9ff;
+    filter: drop-shadow(0 0 5px #08f9ff) drop-shadow(0 0 25px #08f9ff);
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+        
+    }
+    70%,90%
+    {
+        width: 100%;
+        
+    }
 }
 .home-section p{
     max-width: 680px;
