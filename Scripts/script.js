@@ -79,13 +79,6 @@ document.getElementById('project-graphic').addEventListener('change', function()
 
 
 
-
-
-
-
-
-
-
 const logo = document.querySelector('.logo');
 
 function openMenu(){
