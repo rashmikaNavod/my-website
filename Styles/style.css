@@ -110,6 +110,7 @@ color: #009688; */
     height: 4px;
     background: white; 
     align-items: start; 
+    transition: 0.3s;
 }
 .toggle-btn>span:nth-child(2){
     position: absolute;
@@ -117,6 +118,7 @@ color: #009688; */
     height: 4px;
     background: white;  
     align-self: center;
+    transition: 0.3s;
 }
 .toggle-btn>span:nth-child(3){
     position: absolute;
@@ -124,7 +126,19 @@ color: #009688; */
     height: 4px;
     background: white;  
     align-self: end;
+    transition: 0.3s;
 }
+input:checked + .toggle-btn>span:first-child{
+    transform: translateY(10.5px) rotate(45deg);
+}
+input:checked + .toggle-btn>span:nth-child(2){
+    opacity: 0;
+}
+input:checked + .toggle-btn>span:nth-child(3){
+    transform: translateY(-10.5px) rotate(-45deg);
+}
+
+
 
 
 
