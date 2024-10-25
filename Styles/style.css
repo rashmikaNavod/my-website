@@ -85,16 +85,50 @@ color: #009688; */
 .btn-mode img{
     width: 24px;
 }
+#toggle-menu{
+    display: none;
+}
 .btn-mode{
     display: block;
 }
-.btn-menu img{
-    width: 24px;
-}
 .btn-menu{
-    display: block;
-    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.toggle-btn{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: 35px;
+    height: 24px;
+    
+}
+.toggle-btn>span:first-child{
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: white; 
+    align-items: start; 
+}
+.toggle-btn>span:nth-child(2){
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: white;  
+    align-self: center;
+}
+.toggle-btn>span:nth-child(3){
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: white;  
+    align-self: end;
+}
+
+
+
+
 .btn-contact{
     display: flex;
     gap: 12px;
@@ -127,7 +161,7 @@ color: #009688; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 4px;
     padding: 80px 40px;
     position: fixed;
     top: 0;
@@ -135,7 +169,7 @@ color: #009688; */
     width: 100vw;
     bottom: 0;
     height: 100vh;
-    z-index: 50;
+    z-index: 10;
     background: #0f1219;
     transition: 500ms;
 }
@@ -149,6 +183,7 @@ color: #009688; */
     top: 24px;
 }
 .side-menu li a{
+    font-family: 'Jost';
     font-size: 24px;
 }
 
