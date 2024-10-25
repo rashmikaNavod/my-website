@@ -587,15 +587,35 @@ input:checked + .check-btn::before{
     height: 80px;
 }
 .project-graphic-card-container{
+    display: none;
     padding: 35px 30px 30px 30px; 
 }
 
 #project-graphic{
     display: none;
 }
-
-
-
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,400px),1fr));
+    gap: 1em;
+}
+.graphi-card-img img{
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    background-position: top;
+}
+.graphi-card{
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.graphi-card h3{
+    font-family: 'Jost';
+    color: #555;
+    margin-top: 5px;
+}
 
 
 
