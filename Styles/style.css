@@ -600,7 +600,11 @@ input:checked + .check-btn::before{
     object-fit: cover;
     background-size: cover;
     width: 100%;
-
+    opacity: 0.8;
+    transition: 0.2s ease-in-out opacity;
+}
+.graphi-card-img img:hover{
+    opacity: 1;
 }
 .graphi-card{
     text-align: center;
