@@ -112,7 +112,7 @@ color: #009688; */
     position: absolute;
     width: 35px;
     height: 4px;
-    background: white; 
+    background: #9ca3af; 
     align-items: start; 
     transition: 0.3s;
 }
@@ -120,7 +120,7 @@ color: #009688; */
     position: absolute;
     width: 35px;
     height: 4px;
-    background: white;  
+    background: #9ca3af;  
     align-self: center;
     transition: 0.3s;
 }
@@ -128,7 +128,7 @@ color: #009688; */
     position: absolute;
     width: 35px;
     height: 4px;
-    background: white;  
+    background: #9ca3af;  
     align-self: end;
     transition: 0.3s;
 }
