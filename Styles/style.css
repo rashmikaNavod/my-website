@@ -155,7 +155,7 @@ color: #009688; */
 /* ----------------------- Home ------------------------ */
 .profile-img{
     border-radius: 1000px;
-    width: 150px;
+    width: 125px;
     margin-bottom: 15px;
 }
 .home-section{
@@ -928,6 +928,9 @@ input:checked + .check-btn::before{
     }
     .about-content{
         align-items: flex-start;
+    }
+    .profile-img{
+        width: 150px;
     }
 }
 
