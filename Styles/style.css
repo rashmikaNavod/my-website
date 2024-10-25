@@ -104,44 +104,42 @@ color: #009688; */
     display: flex;
     cursor: pointer;
     position: relative;
-    width: 35px;
-    height: 24px;
-    
+    width: 25px;
+    height: 21px;  
 }
 .toggle-btn>span:first-child{
     position: absolute;
-    width: 35px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background: #9ca3af; 
     align-items: start; 
     transition: 0.3s;
 }
 .toggle-btn>span:nth-child(2){
     position: absolute;
-    width: 35px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background: #9ca3af;  
     align-self: center;
     transition: 0.3s;
 }
 .toggle-btn>span:nth-child(3){
     position: absolute;
-    width: 35px;
-    height: 4px;
+    width: 25px;
+    height: 3px;
     background: #9ca3af;  
     align-self: end;
     transition: 0.3s;
 }
 input:checked + .toggle-btn>span:first-child{
-    transform: translateY(10.5px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
 }
 input:checked + .toggle-btn>span:nth-child(2){
     opacity: 0;
 }
 input:checked + .toggle-btn>span:nth-child(3){
-    transform: translateY(-10.5px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
 }
-
 
 
 .btn-contact{
