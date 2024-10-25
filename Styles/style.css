@@ -586,37 +586,34 @@ input:checked + .check-btn::before{
 }
 .project-graphic-card-container{
     display: none;
-    padding: 35px 30px 30px 30px; 
+    padding: 35px 0px 35px 0px; 
 }
 
 #project-graphic{
     display: none;
 }
 .card-wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%,400px),1fr));
-    gap: 1em;
+    columns: 2 350px;
+    column-gap: 10px;
 }
 .graphi-card-img img{
     object-fit: cover;
     background-size: cover;
     width: 100%;
-    background-position: top;
+
 }
 .graphi-card{
     text-align: center;
     padding: 10px;
     background-color: #fff;
     border-radius: 1rem;
+    margin-bottom: 10px;
 }
 .graphi-card h3{
     font-family: 'Jost';
     color: #555;
     margin-top: 5px;
 }
-
-
-
 
 
 /* ----------------------- Assignment ------------------------ */
