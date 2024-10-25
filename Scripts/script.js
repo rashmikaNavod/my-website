@@ -64,6 +64,28 @@ document.getElementById('default').addEventListener('change', function () {
     }
 });
 
+// project-section
+document.getElementById('project-graphic').addEventListener('change', function(){
+    const project_software = document.querySelector('.project-card-container');
+    const project_graphic = document.querySelector('.project-graphic-card-container');
+    if (this.checked) {
+        project_software.style.display = 'none';
+        project_graphic.style.display = 'block';
+    } else {
+        project_software.style.display = 'grid';
+        project_graphic.style.display = 'none';
+    }
+});
+
+
+
+
+
+
+
+
+
+
 const logo = document.querySelector('.logo');
 
 function openMenu(){

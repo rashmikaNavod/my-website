@@ -508,14 +508,14 @@ input:checked + .check-btn::before{
     font-weight: 400;
     line-height: 1;
     color: white;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 .project-card-container{ 
     display: grid;
     justify-content: center;
     gap: 40px 40px;
     grid-template-columns: 270px;
-    padding: 30px;
+    padding: 35px 30px 30px 30px;
 }
 .project{
     position: relative;
@@ -586,6 +586,19 @@ input:checked + .check-btn::before{
     top: 140px;
     height: 80px;
 }
+.project-graphic-card-container{
+    padding: 35px 30px 30px 30px; 
+}
+
+#project-graphic{
+    display: none;
+}
+
+
+
+
+
+
 
 
 /* ----------------------- Assignment ------------------------ */
@@ -926,6 +939,9 @@ input:checked + .check-btn::before{
     .project-card-container{ 
         grid-template-columns: 290px 290px;
     }
+    .project-graphic-card-container{
+        grid-template-columns: 290px 290px;
+    }
     .footer-section>p{
         text-align: end;
     }
@@ -974,6 +990,9 @@ input:checked + .check-btn::before{
         grid-template-columns: 290px 290px 290px;
     }
     .project-card-container{ 
+        grid-template-columns: 290px 290px 290px;
+    }
+    .project-graphic-card-container{
         grid-template-columns: 290px 290px 290px;
     }
     .about-content{
