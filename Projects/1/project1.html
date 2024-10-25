@@ -45,7 +45,7 @@
         h2{
             text-align: center;
             font-family: 'Jost';
-            font-size: 48px;
+            font-size: 32px;
             font-weight: 400;
             line-height: 1;
             color: white;
@@ -55,18 +55,31 @@
             width: 100%;
             padding: 30px 12%;
         }
-        section>div{
-            width: max-content;
-            min-width: 200px;
-            object-fit:contain;
+        .project1{
+            columns: 2 350px;
+            gap: 10px;
         }
-
+        .project1 img{
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;
+            transition: 0.2s ease ease-in-out opacity;
+        }
+        .project1 img:hover{
+            opacity: 1;
+        }
+        @media (min-width:768px) {
+            h2{
+                font-size: 48px;
+            }
+        }
     </style>
 </head>
 <body>
+
     <h2>Project PharmAssist</h2>
+
     <section>
-        
         <div class="project1">
             <img src="Images/1.png" alt="">
             <img src="Images/2.png" alt="">
@@ -79,5 +92,6 @@
             <img src="Images/9.png" alt="">
         </div>
     </section>
+
 </body>
 </html>
