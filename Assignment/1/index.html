@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            bottom: 0;
+        }
+
+        body{
+            height: 100vh;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .light-pannel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            border: 2px solid red;
+            width: max-content;
+            padding: 20px;
+        }
+        .light{
+            width: 100px;
+            height: 50px;
+            background: white;
+        }
+
+    </style>
+</head>
+
+<body>
+        <section class="light-pannel">
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+        </section>
+    
+        <section class="btn-pannel">
+            <button class="start-btn">start</button>
+            <button class="stop-btn">stop</button>
+        </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script>
+
+        const light_count = 6;
+        let current_light = -1;
+        let direction = "right";
+        let intervel_id = null;
+
+        updateLight = ()=>{
+
+            if(direction==="right"){
+                current_light++;
+                $('.light').css("background", "white");
+                $('.light').eq(current_light-1).css("background", "blue"); 
+                $('.light').eq(current_light).css("background", "red"); 
+
+                if(current_light==light_count-1){
+                    direction = "left";
+                }
+            }else{
+                current_light--;
+                $('.light').css("background", "white");
+                $('.light').eq(current_light+1).css("background", "blue"); 
+                $('.light').eq(current_light).css("background", "red"); 
+
+                if(current_light==0){
+                    direction = "right";
+                }  
+            }
+
+        }
+
+        $('.start-btn').on('click', function(){
+            intervel_id = setInterval(updateLight,100);
+        });
+
+        $('.stop-btn').on('click', function(){
+            clearInterval(intervel_id);
+        });
+
+    </script>
+
+</body>
+</html>
